@@ -1,17 +1,24 @@
 import './App.css'
 import React from 'react'
 import HomeHeader from './components/HomeHeader'
+import HomeHero from './components/HomeHero'
+import Avatar from "./assets/avatar.png"
+import { LinkedIn, GitHub, Email } from '@mui/icons-material'
 
 export default function App() {
   return (
     <div className='app-wrapper'>
       <HomeHeader />
-      <div className='home-hero'>
-        <div className='home-hero-left'></div>
-        <div className='home-hero-right'></div>
-      </div>
-      <div className='home-content'>
-        <div className='home-content-aboutMe'></div>
+      <div className="separator" style={{
+        width: '100%',
+        height: '120px',
+      }} />
+      <HomeHero />
+      <div className="separator" style={{
+        width: '100%',
+        height: '250px',
+      }} />
+      <div className='home-content' id='aboutMe'>
         <div className='home-content-skill'></div>
         <div className='home-content-project'>
           <div className='home-content-project-1'></div>
