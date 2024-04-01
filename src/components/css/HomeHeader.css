@@ -3,14 +3,24 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-  width: 80%;
-  position: fixed;
-  top: 0;
+  width: 100%;
+  /* position: fixed;
+  top: 0; */
   padding: 4px 18px;
   margin: 24px 50px;
   border: 2px solid var(--color-secondary);
   border-radius: 12px;
   font-size: 1em;
+  background: var(--color-primary);
+}
+
+.home-header a {
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.home-header a:hover {
+  color: var(--color-accent);
 }
 
 .home-header-logo {
@@ -72,7 +82,7 @@
   cursor: pointer;
 }
 
-.home-header-nav ol li {
+.home-header-nav ol li, .home-header-nav a{
   transition: color 0.15s ease-in-out;
   text-align: center;
 }

@@ -14,11 +14,11 @@ export default function HomeHeader() {
       <div className='home-header-nav'>
         <ol>
           <li>Home</li>
-          <li>About me</li>
-          <li>Skills</li>
-          <li>Projects</li>
-          <li>Experience</li>
-          <li>Education</li>
+          <li><a href='#aboutMe'>About me</a></li>
+          <li><a href='#skills'>Skills</a></li>
+          <li><a href='#Projects'>Projects</a></li>
+          <li><a href='#Experience'>Experience</a></li>
+          <li><a href='#Education'>Education</a></li>
         </ol>
       </div>
       <div className='home-header-themeIcon'>
@@ -30,7 +30,8 @@ export default function HomeHeader() {
           <DarkMode
             style={{ cursor: "pointer" }}
             onClick={() => setTheme('dark')}
-          />}      </div>
+          />}
+      </div>
       <div className='home-header-contactMe'>
         <div className='home-header-contactMe-theme'>
         {theme === 'dark' ?
