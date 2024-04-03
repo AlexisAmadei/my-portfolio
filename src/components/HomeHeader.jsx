@@ -16,9 +16,9 @@ export default function HomeHeader() {
           <li>Home</li>
           <li><a href='#aboutMe'>About me</a></li>
           <li><a href='#skills'>Skills</a></li>
-          <li><a href='#Projects'>Projects</a></li>
-          <li><a href='#Experience'>Experience</a></li>
-          <li><a href='#Education'>Education</a></li>
+          <li><a href='#projects'>Projects</a></li>
+          <li><a href='#experience'>Experience</a></li>
+          <li><a href='#education'>Education</a></li>
         </ol>
       </div>
       <div className='home-header-themeIcon'>

@@ -3,21 +3,26 @@ import React from 'react'
 import HomeHeader from './components/HomeHeader'
 import HomeHero from './components/HomeHero'
 
-import { Javascript } from '@mui/icons-material'
+import { DiJsBadge, DiReact, DiNodejsSmall, DiGit, DiPython, DiWordpress } from "react-icons/di";
+import { SiTypescript, SiPostman, SiSplunk, SiFlutter } from "react-icons/si";
+import { IoLogoFirebase } from "react-icons/io5";
+import { FcLinux } from "react-icons/fc";
+import { size } from '@floating-ui/core';
 
 export default function App() {
   const skills = [
-    { name:'JavaScript', icon: Javascript },
-    { name:'TypeScript', icon: '' },
-    { name:'React', icon: '' },
-    { name:'Node.js', icon: '' },
-    { name:'Firebase', icon: '' },
-    { name:'Postman', icon: '' },
-    { name:'Splunk', icon: '' },
-    { name:'Git', icon: '' },
-    { name:'Linux', icon: '' },
-    { name:'Python', icon: '' },
-    { name:'Wordpress', icon: '' },
+    { name: 'JavaScript', icon: DiJsBadge },
+    { name: 'TypeScript', icon: SiTypescript },
+    { name: 'React', icon: DiReact },
+    { name: 'Node.js', icon: DiNodejsSmall },
+    { name: 'Firebase', icon: IoLogoFirebase },
+    { name: 'Postman', icon: SiPostman },
+    { name: 'Splunk', icon: SiSplunk },
+    { name: 'Git', icon: DiGit },
+    { name: 'Linux', icon: FcLinux },
+    { name: 'Python', icon: DiPython },
+    { name: 'Wordpress', icon: DiWordpress },
+    { name: 'Flutter', icon: SiFlutter },
   ]
   return (
     <div className='app-wrapper'>
@@ -32,11 +37,18 @@ export default function App() {
         height: '250px',
       }} />
       <div className='home-content' id='aboutMe'>
-        <div className='home-content-skill'>
-          <h1>Skills</h1>
-          <p>The skills, tools and technologies I know:</p>
+        <div className='home-content-skill' id='skills'>
+          <h1 style={{ margin:0}}>Skills</h1>
+          <p style={{ margin:'1rem',width:'fit-content',color:'#0bbf6b',fontSize:'30px'}}>The skills, tools and technologies I know:</p>
           <div className='home-content-skill-icons'>
-            {/* skills */}
+            {skills.map((skill, index) => (
+              <div key={index} className='skill-item'>
+                <p>
+                  <skill.icon size={"32px"} color='white'/>
+                  {skill.name}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
         <div className='home-content-project'>
