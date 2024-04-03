@@ -2,10 +2,23 @@ import './App.css'
 import React from 'react'
 import HomeHeader from './components/HomeHeader'
 import HomeHero from './components/HomeHero'
-import Avatar from "./assets/avatar.png"
-import { LinkedIn, GitHub, Email } from '@mui/icons-material'
+
+import { Javascript } from '@mui/icons-material'
 
 export default function App() {
+  const skills = [
+    { name:'JavaScript', icon: Javascript },
+    { name:'TypeScript', icon: '' },
+    { name:'React', icon: '' },
+    { name:'Node.js', icon: '' },
+    { name:'Firebase', icon: '' },
+    { name:'Postman', icon: '' },
+    { name:'Splunk', icon: '' },
+    { name:'Git', icon: '' },
+    { name:'Linux', icon: '' },
+    { name:'Python', icon: '' },
+    { name:'Wordpress', icon: '' },
+  ]
   return (
     <div className='app-wrapper'>
       <HomeHeader />
@@ -19,7 +32,13 @@ export default function App() {
         height: '250px',
       }} />
       <div className='home-content' id='aboutMe'>
-        <div className='home-content-skill'></div>
+        <div className='home-content-skill'>
+          <h1>Skills</h1>
+          <p>The skills, tools and technologies I know:</p>
+          <div className='home-content-skill-icons'>
+            {/* skills */}
+          </div>
+        </div>
         <div className='home-content-project'>
           <div className='home-content-project-1'></div>
           <div className='home-content-project-2'></div>
