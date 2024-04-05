@@ -3,11 +3,6 @@ import React from 'react'
 import HomeHeader from './components/HomeHeader'
 import HomeHero from './components/HomeHero'
 
-import { DiJsBadge, DiReact, DiNodejsSmall, DiGit, DiPython, DiWordpress } from "react-icons/di";
-import { SiTypescript, SiPostman, SiSplunk, SiFlutter } from "react-icons/si";
-import { IoLogoFirebase } from "react-icons/io5";
-import { FcLinux } from "react-icons/fc";
-
 import {
   IconJs,
   IconTypescript,
@@ -24,20 +19,6 @@ import {
 } from './assets/Icons';
 
 export default function App() {
-  // const skills = [
-  //   { name: 'JavaScript', icon: DiJsBadge },
-  //   { name: 'TypeScript', icon: SiTypescript },
-  //   { name: 'React', icon: DiReact },
-  //   { name: 'Node.js', icon: DiNodejsSmall },
-  //   { name: 'Firebase', icon: IoLogoFirebase },
-  //   { name: 'Postman', icon: SiPostman },
-  //   { name: 'Splunk', icon: SiSplunk },
-  //   { name: 'Git', icon: DiGit },
-  //   { name: 'Linux', icon: FcLinux },
-  //   { name: 'Python', icon: DiPython },
-  //   { name: 'Wordpress', icon: DiWordpress },
-  //   { name: 'Flutter', icon: SiFlutter },
-  // ]
   const skills = [
     { name: 'JavaScript', icon: IconJs },
     { name: 'TypeScript', icon: IconTypescript },
