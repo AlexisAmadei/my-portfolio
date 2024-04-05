@@ -7,22 +7,50 @@ import { DiJsBadge, DiReact, DiNodejsSmall, DiGit, DiPython, DiWordpress } from 
 import { SiTypescript, SiPostman, SiSplunk, SiFlutter } from "react-icons/si";
 import { IoLogoFirebase } from "react-icons/io5";
 import { FcLinux } from "react-icons/fc";
-import { size } from '@floating-ui/core';
+
+import {
+  IconJs,
+  IconTypescript,
+  IconReact,
+  IconNode,
+  IconFirebase,
+  IconPostman,
+  IconSplunk,
+  IconGit,
+  IconLinux,
+  IconPython,
+  IconWordpress,
+  IconFlutter,
+} from './assets/Icons';
 
 export default function App() {
+  // const skills = [
+  //   { name: 'JavaScript', icon: DiJsBadge },
+  //   { name: 'TypeScript', icon: SiTypescript },
+  //   { name: 'React', icon: DiReact },
+  //   { name: 'Node.js', icon: DiNodejsSmall },
+  //   { name: 'Firebase', icon: IoLogoFirebase },
+  //   { name: 'Postman', icon: SiPostman },
+  //   { name: 'Splunk', icon: SiSplunk },
+  //   { name: 'Git', icon: DiGit },
+  //   { name: 'Linux', icon: FcLinux },
+  //   { name: 'Python', icon: DiPython },
+  //   { name: 'Wordpress', icon: DiWordpress },
+  //   { name: 'Flutter', icon: SiFlutter },
+  // ]
   const skills = [
-    { name: 'JavaScript', icon: DiJsBadge },
-    { name: 'TypeScript', icon: SiTypescript },
-    { name: 'React', icon: DiReact },
-    { name: 'Node.js', icon: DiNodejsSmall },
-    { name: 'Firebase', icon: IoLogoFirebase },
-    { name: 'Postman', icon: SiPostman },
-    { name: 'Splunk', icon: SiSplunk },
-    { name: 'Git', icon: DiGit },
-    { name: 'Linux', icon: FcLinux },
-    { name: 'Python', icon: DiPython },
-    { name: 'Wordpress', icon: DiWordpress },
-    { name: 'Flutter', icon: SiFlutter },
+    { name: 'JavaScript', icon: IconJs },
+    { name: 'TypeScript', icon: IconTypescript },
+    { name: 'React', icon: IconReact },
+    { name: 'Node.js', icon: IconNode },
+    { name: 'Firebase', icon: IconFirebase },
+    { name: 'Postman', icon: IconPostman },
+    { name: 'Splunk', icon: IconSplunk },
+    { name: 'Git', icon: IconGit },
+    { name: 'Linux', icon: IconLinux },
+    { name: 'Python', icon: IconPython },
+    { name: 'Wordpress', icon: IconWordpress },
+    { name: 'Flutter', icon: IconFlutter },
   ]
   return (
     <div className='app-wrapper'>
@@ -34,7 +62,7 @@ export default function App() {
       <HomeHero />
       <div className="separator" style={{
         width: '100%',
-        height: '250px',
+        height: '180px',
       }} />
       <div className='home-content' id='aboutMe'>
         <div className='home-content-skill' id='skills'>
@@ -43,10 +71,8 @@ export default function App() {
           <div className='home-content-skill-icons'>
             {skills.map((skill, index) => (
               <div key={index} className='skill-item'>
-                <p>
-                  <skill.icon size={"32px"} color='white'/>
-                  {skill.name}
-                </p>
+                  <skill.icon />
+                  <p>{skill.name}</p>
               </div>
             ))}
           </div>

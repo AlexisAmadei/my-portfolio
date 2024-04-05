@@ -9,13 +9,13 @@
 }
 
 #root {
-    max-width: 1280px;
-    margin: 0 auto;
-    padding: 0 4rem;
-    box-sizing: border-box;
-    min-height: 100vh;
-    width: 100vw;
-  }
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 4rem;
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100vw;
+}
 
 .app-wrapper {
   display: flex;
@@ -45,11 +45,15 @@
 .home-content-skill-icons {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 70%;
 }
 
 .skill-item {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin: 1rem;
+  width: 60px;
 }
