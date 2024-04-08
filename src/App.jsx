@@ -39,9 +39,9 @@ export default function App() {
     { name: 'Flutter', icon: IconFlutter },
   ]
   const projects = [
-    { name: 'PIM', description: 'Projet Intensif Mobile', tech: ["React", "JS", "Firebase", "Git"], link:"https://github.com/AlexisAmadei/PIMobile", preview: previewPIM},
-    { name: 'FT2', description: 'Projet WebSchoolFactory dataviz', tech: ["React", "JS", "Git"], link:"https://github.com/AlexisAmadei/KEAPartners_reactApp", preview: previewFT2},
-    { name: 'Appli personnelle', description: 'Playground perso', tech: ["React", "firebase", "Postman", "Git"], link:"https://github.com/AlexisAmadei/tinapp", preview: previewTinapp},
+    { name: 'PIM', description: 'Projet Intensif Mobile', tech: ["React", "JS", "Firebase", "Git"], link: "https://github.com/AlexisAmadei/PIMobile", preview: previewPIM },
+    { name: 'FT2', description: 'Projet WebSchoolFactory dataviz', tech: ["React", "JS", "Git"], link: "https://github.com/AlexisAmadei/KEAPartners_reactApp", preview: previewFT2 },
+    { name: 'Appli personnelle', description: 'Playground perso', tech: ["React", "firebase", "Postman", "Git"], link: "https://github.com/AlexisAmadei/tinapp", preview: previewTinapp },
   ]
   return (
     <div className='app-wrapper'>
@@ -56,8 +56,8 @@ export default function App() {
         width: '100%',
         height: '180px',
       }} />
-      <div id="anchor-skill" className="anchor"></div>
       <div className='home-content' id='aboutMe'>
+        <div id="anchor-skill" className="anchor"></div>
         <div className='home-content-skill' id='skills'>
           <h1 style={{ margin: 0 }}>Skills</h1>
           <p style={{ margin: '1rem', width: 'fit-content', color: '#0bbf6b', fontSize: '30px' }}>The skills, tools and technologies I know:</p>
@@ -80,11 +80,11 @@ export default function App() {
           <div className='project-container'>
             {projects.map((projet, index) => (
               <div key={index} className='project-item'>
-                <img style={{borderRadius:'0.6rem'}} className='project-preview' src={projet.preview} width={"100%"} alt='project preview' />
+                <img style={{ borderRadius: '0.6rem' }} className='project-preview' src={projet.preview} width={"100%"} alt='project preview' />
                 <h2>{projet.name}</h2>
                 <p>{projet.description}</p>
                 <div className='project-tech-container'>
-                <a href={projet.link} target='_blank' rel='noreferrer'><p><GitHub style={{ color:"white" }} /></p></a>
+                  <a href={projet.link} target='_blank' rel='noreferrer'><p><GitHub style={{ color: "white" }} /></p></a>
                   {projet.tech.map((tech, index) => (
                     <span key={index} className='project-tech'>{tech}</span>
                   ))}
