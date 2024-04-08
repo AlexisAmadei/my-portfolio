@@ -4,6 +4,7 @@ import HomeHeader from './components/HomeHeader'
 import HomeHero from './components/HomeHero'
 import ContentProject from './components/ContentProject';
 import ContentSkills from './components/ContentSkills';
+import ContentExp from './components/ContentExp';
 
 export default function App() {
   return (
@@ -32,10 +33,7 @@ export default function App() {
           height: '100px',
         }} />
         <div id="anchor-exp" className="anchor"></div>
-        <div className='home-content-experience'>
-          <div className='home-content-experience-1'></div>
-          <div className='home-content-experience-2'></div>
-        </div>
+        <ContentExp />
         <div className='home-content-education'></div>
         <div className='home-content-contactMe'></div>
       </div>
