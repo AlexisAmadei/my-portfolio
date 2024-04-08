@@ -13,12 +13,12 @@ export default function HomeHeader() {
       </div>
       <div className='home-header-nav'>
         <ol>
-          <li>Home</li>
-          <li><a href='#aboutMe'>About me</a></li>
-          <li><a href='#skills'>Skills</a></li>
-          <li><a href='#projects'>Projects</a></li>
-          <li><a href='#experience'>Experience</a></li>
-          <li><a href='#education'>Education</a></li>
+          <li><a href='#'>Home</a></li>
+          {/* <li><a href='#aboutMe'>About me</a></li> */}
+          <li><a href='#anchor-skill'>Skills</a></li>
+          <li><a href='#anchor-project'>Projects</a></li>
+          <li><a href='#anchor-exp'>Experience</a></li>
+          <li><a href='#anchor-education'>Education</a></li>
         </ol>
       </div>
       <div className='home-header-themeIcon'>

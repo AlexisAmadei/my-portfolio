@@ -17,6 +17,13 @@
   width: 100vw;
 }
 
+.anchor {
+  display: block;
+  height: 100px;
+  margin-top: -100px;
+  visibility: hidden;
+}
+
 .app-wrapper {
   display: flex;
   box-sizing: border-box;

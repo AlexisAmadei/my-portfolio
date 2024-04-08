@@ -50,11 +50,13 @@ export default function App() {
         width: '100%',
         height: '120px',
       }} />
+      <div className="anchor"></div>
       <HomeHero />
       <div className="separator" style={{
         width: '100%',
         height: '180px',
       }} />
+      <div id="anchor-skill" className="anchor"></div>
       <div className='home-content' id='aboutMe'>
         <div className='home-content-skill' id='skills'>
           <h1 style={{ margin: 0 }}>Skills</h1>
@@ -72,6 +74,7 @@ export default function App() {
           width: '100%',
           height: '100px',
         }} />
+        <div id="anchor-project" className="anchor"></div>
         <div className='home-content-project'>
           <h1>Work</h1>
           <div className='project-container'>
@@ -90,6 +93,7 @@ export default function App() {
             ))}
           </div>
         </div>
+        <div id="anchor-exp" className="anchor"></div>
         <div className='home-content-experience'>
           <div className='home-content-experience-1'></div>
           <div className='home-content-experience-2'></div>
