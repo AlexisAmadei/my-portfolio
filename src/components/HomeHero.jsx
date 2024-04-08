@@ -1,6 +1,7 @@
 import React from 'react'
 import './css/HomeHero.css'
 import Avatar from '../assets/avatar.png'
+import Me from '../assets/me.png'
 
 export default function HomeHero() {
   return (
@@ -13,7 +14,7 @@ export default function HomeHero() {
           <br /><span style={{color:'#c0c0c0',fontSize:'20px'}}>A passionnate <span style={{color:"#0bbf6b"}}>{"<Frontend Web Developer />"}</span> willing to learn and grow.</span>
         </div>
         <div className='home-hero-right'>
-          <img src={Avatar} alt='avatar' className='avatar' />
+          <img src={Me} alt='avatar' className='avatar' />
         </div>
       </div>
   )
