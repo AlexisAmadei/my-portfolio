@@ -3,70 +3,34 @@ import React from 'react'
 import HomeHeader from './components/HomeHeader'
 import HomeHero from './components/HomeHero'
 import ContentProject from './components/ContentProject';
-
-import {
-  IconJs,
-  IconTypescript,
-  IconReact,
-  IconNode,
-  IconFirebase,
-  IconPostman,
-  IconSplunk,
-  IconGit,
-  IconLinux,
-  IconPython,
-  IconWordpress,
-  IconFlutter,
-} from './assets/Icons';
+import ContentSkills from './components/ContentSkills';
 
 export default function App() {
-  const skills = [
-    { name: 'JavaScript', icon: IconJs },
-    { name: 'TypeScript', icon: IconTypescript },
-    { name: 'React', icon: IconReact },
-    { name: 'Node.js', icon: IconNode },
-    { name: 'Firebase', icon: IconFirebase },
-    { name: 'Postman', icon: IconPostman },
-    { name: 'Splunk', icon: IconSplunk },
-    { name: 'Git', icon: IconGit },
-    { name: 'Linux', icon: IconLinux },
-    { name: 'Python', icon: IconPython },
-    { name: 'Wordpress', icon: IconWordpress },
-    { name: 'Flutter', icon: IconFlutter },
-  ]
   return (
     <div className='app-wrapper'>
       <HomeHeader />
       <div className="separator" style={{
         width: '100%',
-        height: '120px',
+        height: '180px',
       }} />
       <div className="anchor"></div>
       <HomeHero />
       <div className="separator" style={{
         width: '100%',
-        height: '180px',
+        height: '150px',
       }} />
       <div className='home-content' id='aboutMe'>
-        <div id="anchor-skill" className="anchor"></div>
-        <div className='home-content-skill' id='skills'>
-          <h1 style={{ margin: 0 }}>Skills</h1>
-          <p style={{ margin: '1rem', width: 'fit-content', color: '#0bbf6b', fontSize: '30px' }}>The skills, tools and technologies I know:</p>
-          <div className='home-content-skill-icons'>
-            {skills.map((skill, index) => (
-              <div key={index} className='skill-item'>
-                <skill.icon />
-                <p>{skill.name}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+        <ContentSkills />
         <div className="separator" style={{
           width: '100%',
           height: '100px',
         }} />
         <div id="anchor-project" className="anchor"></div>
         <ContentProject />
+        <div className="separator" style={{
+          width: '100%',
+          height: '100px',
+        }} />
         <div id="anchor-exp" className="anchor"></div>
         <div className='home-content-experience'>
           <div className='home-content-experience-1'></div>

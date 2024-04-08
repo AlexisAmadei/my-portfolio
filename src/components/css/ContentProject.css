@@ -74,3 +74,13 @@ p {
 .project-tech-container a:hover {
     color: var(--color-accent);
 }
+
+.view-more button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #26312b;
+    color: #08b768;
+    margin-bottom: 8px;
+}

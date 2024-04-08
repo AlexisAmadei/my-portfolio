@@ -29,6 +29,9 @@ export default function ContentProject() {
           </div>
         ))}
       </div>
+      <div className='view-more'>
+        <a href='https://github.com/AlexisAmadei?tab=repositories' target='_blank' rel='noreferrer'><button style={{gap:"4px"}}><GitHub /> View more</button></a>
+      </div>
     </div>
   )
 }
