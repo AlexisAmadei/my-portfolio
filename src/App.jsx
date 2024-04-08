@@ -2,6 +2,7 @@ import './App.css'
 import React from 'react'
 import HomeHeader from './components/HomeHeader'
 import HomeHero from './components/HomeHero'
+import ContentProject from './components/ContentProject';
 
 import {
   IconJs,
@@ -17,12 +18,6 @@ import {
   IconWordpress,
   IconFlutter,
 } from './assets/Icons';
-import { GitHub } from '@mui/icons-material'
-
-import previewPIM from './assets/preview/previewPIM.png'
-import previewFT2 from './assets/preview/previewFT2.png'
-import previewTinapp from './assets/preview/previewTinapp.png'
-import ContentProject from './components/ContentProject';
 
 export default function App() {
   const skills = [
