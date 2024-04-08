@@ -1,19 +1,32 @@
-import React, { useState } from 'react'
-import './css/ContentExp.css'
-import { BiMinus, BiPlus } from 'react-icons/bi'
+import React, { useState } from 'react';
+import './css/ContentExp.css';
+import { BiMinus, BiPlus } from 'react-icons/bi';
+import { LocationOn } from '@mui/icons-material';
 
-export default function () {
-  const [showDetails, setShowDetails] = useState(true)
-
+export default function ContentExp() {
   const experiences = [
     {
       name: 'Frontend developer @ Accor',
       date: '2023 (2 months)',
       description: 'Lorem ipsum dolor sit amet',
-      location: 'Paris, France',
-      skills: ['Typescript', 'Python', 'GitLab'],
+      location: 'Issy-les-Moulineaux, France',
+      skills: ['TypeScript', 'Python', 'GitLab', 'Splunk', 'Leaflet'],
     },
-  ]
+    {
+      name: 'This portfolio ',
+      date: '∞',
+      description: `The website your eyes are currently on`,
+      location: 'Paris, France',
+      skills: ['React', 'JavaScript', 'HTML', 'CSS', 'Firebase Hosting'],
+    },
+  ];
+  const [showDetails, setShowDetails] = useState(new Array(experiences.length).fill(false));
+  const handleToggleDetails = (index) => {
+    const updatedShowDetails = [...showDetails];
+    updatedShowDetails[index] = !showDetails[index];
+    setShowDetails(updatedShowDetails);
+    console.log('details => ', showDetails);
+  };
 
   return (
     <div className='home-content-experience'>
@@ -25,44 +38,29 @@ export default function () {
           <div className='experience-item-preview'>
             <h2>{exp.name}</h2>
             <div className='experience-item-preview-rightSide'>
-              <p>{exp.date}</p>
-              {showDetails ? (
-                <span onClick={() => setShowDetails(!showDetails)}>
-                  <BiPlus style={{ color: 'var(--color-accent)', fontSize: 'larger' }} />
-                </span>
-              ) : null}
-              {!showDetails ? (
-                <span onClick={() => setShowDetails(!showDetails)}>
+              <p style={{ fontSize: 'larger' }}>{exp.date}</p>
+              <span onClick={() => handleToggleDetails(index)}>
+                {showDetails[index] ? (
                   <BiMinus style={{ color: 'var(--color-accent)', fontSize: 'larger' }} />
-                </span>
-              ) : null}
+                ) : (
+                  <BiPlus style={{ color: 'var(--color-accent)', fontSize: 'larger' }} />
+                )}
+              </span>
             </div>
           </div>
-          {showDetails ? null : (
+          {showDetails[index] ? ( // Conditionally render details only for the clicked experience
             <div className='experience-item-details'>
-              <p>{exp.description}</p>
-              <p>{exp.location}</p>
+              <p id='location'><LocationOn />{exp?.location}</p>
+              <p id='description'>{exp?.description}</p>
               <div className='experience-item-skills'>
-                {exp.skills.map((skill, index) => (
+                {exp?.skills.map((skill, index) => (
                   <p key={index}>{skill}</p>
                 ))}
               </div>
             </div>
-          )}
-          {/* <div className='experience-item-details'>
-            <p>{exp.description}</p>
-            <p>{exp.location}</p>
-            <div className='experience-item-skills'>
-              {exp.skills.map((skill, index) => (
-                <p key={index}>{skill}</p>
-              ))}
-            </div>
-          </div> */}
+          ) : null}
         </div>
       ))}
     </div>
-  )
+  );
 }
-
-
-// 65536 ports
