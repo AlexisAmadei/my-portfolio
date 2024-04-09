@@ -17,7 +17,7 @@ export default function ContentProject() {
       <div className='project-container'>
         {projects.map((projet, index) => (
           <div key={index} className='project-item'>
-            <img style={{ borderRadius: '0.6rem' }} className='project-preview' src={projet.preview} width={"100%"} alt='project preview' />
+            <img style={{ borderRadius: '16px' }} className='project-preview' src={projet.preview} width={"100%"} alt='project preview' />
             <h2>{projet.name}</h2>
             <p>{projet.description}</p>
             <div className='project-tech-container'>
