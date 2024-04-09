@@ -21,14 +21,14 @@ export default function ContentSkills() {
     { name: 'TypeScript', icon: IconTypescript },
     { name: 'React', icon: IconReact },
     { name: 'Node.js', icon: IconNode },
+    { name: 'Python', icon: IconPython },
+    { name: 'Git', icon: IconGit },
     { name: 'Firebase', icon: IconFirebase },
     { name: 'Postman', icon: IconPostman },
     { name: 'Splunk', icon: IconSplunk },
-    { name: 'Git', icon: IconGit },
-    { name: 'Linux', icon: IconLinux },
-    { name: 'Python', icon: IconPython },
     { name: 'Wordpress', icon: IconWordpress },
     { name: 'Flutter', icon: IconFlutter },
+    { name: 'Linux', icon: IconLinux },
   ]
   return (
     <div className='home-content-skill' id='skills'>
