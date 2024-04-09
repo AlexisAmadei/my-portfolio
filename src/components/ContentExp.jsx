@@ -39,7 +39,7 @@ export default function ContentExp() {
             <h2>{exp.name}</h2>
             <div className='experience-item-preview-rightSide'>
               <p style={{ fontSize: 'larger' }}>{exp.date}</p>
-              <span onClick={() => handleToggleDetails(index)}>
+              <span style={{ cursor:'pointer' }} onClick={() => handleToggleDetails(index)}>
                 {showDetails[index] ? (
                   <BiMinus style={{ color: 'var(--color-accent)', fontSize: 'larger' }} />
                 ) : (
@@ -48,7 +48,7 @@ export default function ContentExp() {
               </span>
             </div>
           </div>
-          {showDetails[index] ? ( // Conditionally render details only for the clicked experience
+          {showDetails[index] ? (
             <div className='experience-item-details'>
               <p id='location'><LocationOn />{exp?.location}</p>
               <p id='description'>{exp?.description}</p>

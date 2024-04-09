@@ -34,8 +34,6 @@ export default function App() {
         }} />
         <div id="anchor-exp" className="anchor"></div>
         <ContentExp />
-        <div className='home-content-education'></div>
-        <div className='home-content-contactMe'></div>
       </div>
       <div className='home-footer'>
         <div className='home-footer-logo'></div>
