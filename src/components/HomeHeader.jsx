@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import { LightMode, DarkMode } from '@mui/icons-material'
-import { useState } from 'react'
 import "./css/HomeHeader.css"
 
-export default function HomeHeader() {
-  const [theme, setTheme] = useState('dark')
+import ThemeContext from './ThemeContext'
 
+export default function HomeHeader() {
+  const { theme, setTheme } = useContext(ThemeContext)
   return (
+    <ThemeContext.Provider value={theme}>
     <div className='home-header'>
       <div className='home-header-logo'>
         <div><span>{"<A"}</span>lexis<span>{"/>"}</span></div>
@@ -23,11 +24,11 @@ export default function HomeHeader() {
         {theme === 'dark' ?
           <LightMode
             style={{ cursor: "pointer" }}
-            onClick={() => setTheme('light')}
+            onClick={setTheme}
           /> :
           <DarkMode
             style={{ cursor: "pointer" }}
-            onClick={() => setTheme('dark')}
+            onClick={setTheme}
           />}
       </div>
       <div className='home-header-contactMe'>
@@ -35,15 +36,16 @@ export default function HomeHeader() {
         {theme === 'dark' ?
           <LightMode
             style={{ cursor: "pointer" }}
-            onClick={() => setTheme('light')}
+            onClick={setTheme}
           /> :
           <DarkMode
             style={{ cursor: "pointer" }}
-            onClick={() => setTheme('dark')}
+            onClick={setTheme}
           />}
         </div>
         <button>Contact Me</button>
       </div>
     </div>
+    </ThemeContext.Provider>
   )
 }

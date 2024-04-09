@@ -1,5 +1,5 @@
 import './App.css'
-import React from 'react'
+
 import HomeHeader from './components/HomeHeader'
 import HomeHero from './components/HomeHero'
 import ContentProject from './components/ContentProject'
@@ -7,9 +7,11 @@ import ContentSkills from './components/ContentSkills'
 import ContentExp from './components/ContentExp'
 import Footer from './components/Footer'
 
+import ThemeContext from './components/ThemeContext'
+
 export default function App() {
   return (
-    <div className='app-wrapper'>
+    <div className={`app-wrapper`}>
       <HomeHeader />
       <div className="separator" style={{
         width: '100%',
@@ -37,9 +39,9 @@ export default function App() {
         <ContentExp />
       </div>
       <div className="separator" style={{
-          width: '100%',
-          height: '100px',
-        }} />
+        width: '100%',
+        height: '100px',
+      }} />
       <div className='footer-line'></div>
       <Footer />
     </div>
