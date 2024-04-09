@@ -14,11 +14,9 @@ export default function HomeHeader() {
       <div className='home-header-nav'>
         <ol>
           <li><a href='#'>Home</a></li>
-          {/* <li><a href='#aboutMe'>About me</a></li> */}
           <li><a href='#anchor-skill'>Skills</a></li>
           <li><a href='#anchor-project'>Projects</a></li>
           <li><a href='#anchor-exp'>Experience</a></li>
-          <li><a href='#anchor-education'>Education</a></li>
         </ol>
       </div>
       <div className='home-header-themeIcon'>
