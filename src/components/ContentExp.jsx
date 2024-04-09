@@ -30,7 +30,7 @@ export default function ContentExp() {
 
   return (
     <div className='home-content-experience'>
-      <p style={{ margin: '1rem', width: 'fit-content', color: '#0bbf6b', fontSize: '30px' }}>
+      <p style={{ margin: '1rem', width: 'fit-content', color: 'var(--color-accent)', fontSize: '30px' }}>
         Here is a quick summary of my most recent experiences
       </p>
       {experiences.map((exp, index) => (
