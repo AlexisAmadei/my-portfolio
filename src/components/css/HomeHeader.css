@@ -1,9 +1,18 @@
+.home-header.light {
+  background: var(--light-primary);
+  color: var(--light-text);
+}
+
+.home-header.dark {
+  background: var(--dark-primary);
+  color: var(--dark-text);
+}
+
 .home-header {
   justify-content: space-between;
   align-items: center;
   display: flex;
   flex-direction: row;
-  width: 100%;
   padding: 4px 18px;
   margin: 24px 50px;
   border: 2px solid var(--color-secondary);
@@ -98,4 +107,5 @@
   flex-direction: row;
   align-items: center;
   gap: 16px;
+  line-height: 0;
 }

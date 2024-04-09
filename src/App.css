@@ -1,11 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 * {
-  /* Color palette */
-  --color-primary: #242424;
-  --color-secondary: #2e2e2e;
-  --color-accent: #0bbf6b;
-  --color-text: #f4f4f4;
+  /* Dark Color palette */
+  --dark-primary: #242424;
+  --dark-secondary: #2e2e2e;
+  --dark-accent: #0bbf6b;
+  --dark-text: #f4f4f4;
+
+  /* Light Color palette */
+  --light-primary: #f2f5fa;
+  --light-secondary: 0;
+  --light-accent: #2ea76b;
+  --light-text: #1d2a38;
+  --light-text-secondary: #7c8994;
 }
 
 #root {
