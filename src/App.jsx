@@ -2,9 +2,10 @@ import './App.css'
 import React from 'react'
 import HomeHeader from './components/HomeHeader'
 import HomeHero from './components/HomeHero'
-import ContentProject from './components/ContentProject';
-import ContentSkills from './components/ContentSkills';
-import ContentExp from './components/ContentExp';
+import ContentProject from './components/ContentProject'
+import ContentSkills from './components/ContentSkills'
+import ContentExp from './components/ContentExp'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
@@ -35,14 +36,12 @@ export default function App() {
         <div id="anchor-exp" className="anchor"></div>
         <ContentExp />
       </div>
-      <div className='home-footer'>
-        <div className='home-footer-logo'></div>
-        <div className='home-footer-contact'>
-          <div className='home-footer-contact-email'></div>
-          <div className='home-footer-contact-phone'></div>
-          <div className='home-footer-social'></div>
-        </div>
-      </div>
+      <div className="separator" style={{
+          width: '100%',
+          height: '100px',
+        }} />
+      <div className='footer-line'></div>
+      <Footer />
     </div>
   )
 }
