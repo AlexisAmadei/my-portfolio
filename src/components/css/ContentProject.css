@@ -70,7 +70,6 @@
 .project-tech-container a {
     position: relative;
     bottom: 0;
-    /* width: 100%; */
     text-align: left;
     text-decoration: none;
     color: white;
@@ -84,8 +83,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
     background-color: #26312b;
     color: #08b768;
     margin-bottom: 8px;
+}
+
+.home-content-project.light button {
+    background-color: var(--light-accent);
+    color: white;
 }

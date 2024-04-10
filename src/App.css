@@ -16,19 +16,24 @@
 }
 
 #root {
-  max-width: 1280px;
   box-sizing: border-box;
   min-height: 100vh;
   width: 100vw;
+  align-items: center;
+}
+
+.root-wrapper.light {
+  background-color: var(--light-primary);
 }
 
 .app-wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
   align-items: center;
   height: 100%;
-  margin: 0 auto;
   padding: 0 4.2rem;
 }
 
