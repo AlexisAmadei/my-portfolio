@@ -30,7 +30,7 @@ export default function ContentExp() {
 
   return (
     <div className='home-content-experience'>
-      <p style={{ margin: '1rem', width: 'fit-content', color: 'var(--color-accent)', fontSize: '30px' }}>
+      <p style={{ margin: '1rem', width: 'fit-content', color: 'var(--dark-accent)', fontSize: '30px' }}>
         Here is a quick summary of my most recent experiences
       </p>
       {experiences.map((exp, index) => (
@@ -39,15 +39,15 @@ export default function ContentExp() {
             <h2>
               {exp.name}
               {exp?.company !== undefined && exp?.company !== '' ? ' at ' : exp?.company}
-              <span style={{ color: 'var(--color-accent)' }}>{exp?.company}</span>
+              <span style={{ color: 'var(--dark-accent)' }}>{exp?.company}</span>
             </h2>
             <div className='experience-item-preview-rightSide'>
               <p style={{ fontSize: 'larger' }}>{exp.date}</p>
               <span style={{ cursor:'pointer' }} onClick={() => handleToggleDetails(index)}>
                 {showDetails[index] ? (
-                  <BiMinus style={{ color: 'var(--color-accent)', fontSize: 'larger' }} />
+                  <BiMinus style={{ color: 'var(--dark-accent)', fontSize: 'larger' }} />
                 ) : (
-                  <BiPlus style={{ color: 'var(--color-accent)', fontSize: 'larger' }} />
+                  <BiPlus style={{ color: 'var(--dark-accent)', fontSize: 'larger' }} />
                 )}
               </span>
             </div>

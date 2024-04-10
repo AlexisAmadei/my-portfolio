@@ -12,10 +12,10 @@
   -moz-osx-font-smoothing: grayscale;
 
   /* Color palette */
-  --color-primary: #242424;
-  --color-secondary: #2e2e2e;
-  --color-accent: #08b363;
-  --color-text: #f4f4f4;
+  --dark-primary: #242424;
+  --dark-secondary: #2e2e2e;
+  --dark-accent: #08b363;
+  --dark-text: #f4f4f4;
 }
 
 a {

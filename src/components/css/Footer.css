@@ -13,12 +13,12 @@
 }
 
 .footer-logo span {
-    color: var(--color-accent);
+    color: var(--dark-accent);
 }
 
 .footer-line {
     width: 100%;
-    border-top: 4px solid var(--color-secondary);
+    border-top: 4px solid var(--dark-secondary);
 }
 
 .footer-contact {

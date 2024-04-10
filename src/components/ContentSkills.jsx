@@ -13,6 +13,7 @@ import {
   IconWordpress,
   IconFlutter,
 } from '../assets/Icons';
+import { ThemeContext } from './ThemeContext';
 
 export default function ContentSkills() {
   const skills = [
@@ -30,18 +31,22 @@ export default function ContentSkills() {
     // { name: 'Linux', icon: IconLinux },
   ]
   return (
-    <div className='home-content-skill' id='skills'>
-      <div id="anchor-skill" className="anchor"></div>
-      <h1 style={{ margin: 0 }}>Skills</h1>
-      <p style={{ margin: '1rem', width: 'fit-content', color: 'var(--color-accent)', fontSize: '30px' }}>The skills, tools and technologies I know:</p>
-      <div className='home-content-skill-icons'>
-        {skills.map((skill, index) => (
-          <div key={index} className='skill-item'>
-            <skill.icon />
-            <p>{skill.name}</p>
+    <ThemeContext.Consumer>
+      {({ theme }) => (
+        <div className={`home-content-skill ${theme}`} id='skills'>
+          <div id="anchor-skill" className="anchor"></div>
+          <h1 style={{ margin: 0 }}>Skills</h1>
+          <p style={{ margin: '1rem', width: 'fit-content', color: 'var(--dark-accent)', fontSize: '30px' }}>The skills, tools and technologies I know:</p>
+          <div className='home-content-skill-icons'>
+            {skills.map((skill, index) => (
+              <div key={index} className='skill-item'>
+                <skill.icon />
+                <p>{skill.name}</p>
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-    </div>
+        </div>
+      )}
+    </ThemeContext.Consumer>
   )
 }

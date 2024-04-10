@@ -9,7 +9,7 @@
 
   /* Light Color palette */
   --light-primary: #f2f5fa;
-  --light-secondary: 0;
+  --light-secondary: #cccccc;
   --light-accent: #2ea76b;
   --light-text: #1d2a38;
   --light-text-secondary: #7c8994;
@@ -17,8 +17,6 @@
 
 #root {
   max-width: 1280px;
-  margin: 0 auto;
-  padding: 0 4.2rem;
   box-sizing: border-box;
   min-height: 100vh;
   width: 100vw;
@@ -30,6 +28,13 @@
   flex-direction: column;
   align-items: center;
   height: 100%;
+  margin: 0 auto;
+  padding: 0 4.2rem;
+}
+
+.app-wrapper.light {
+  background: var(--light-primary);
+  color: var(--light-text);
 }
 
 .anchor {
@@ -53,7 +58,7 @@
 }
 
 .home-content h1 {
-  background-color: var(--color-secondary);
+  background-color: var(--dark-secondary);
   padding: 1rem 1.8rem;
   border-radius: 0.8rem;
   font-size: large;

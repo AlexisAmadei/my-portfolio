@@ -15,7 +15,7 @@
     padding: 16px;
     margin: 8px 0;
 
-    border: 1px solid var(--color-secondary);
+    border: 1px solid var(--dark-secondary);
     border-radius: 16px;
 }
 
@@ -62,7 +62,7 @@
 .experience-item-skills p {
     padding: 0.4rem 0.8rem;
     border-radius: 16px;
-    background-color: var(--color-secondary);
+    background-color: var(--dark-secondary);
     color: white;
     font-size: smaller;
 }

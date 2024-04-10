@@ -5,12 +5,8 @@ import "./css/HomeHeader.css"
 import {ThemeContext} from './ThemeContext'
 
 export default function HomeHeader() {
-  const [theme, setTheme] = useState('dark');
+  const {theme, toggleTheme} = useContext(ThemeContext);
 
-    const toggleTheme = () => {
-        setTheme(theme === 'dark' ? 'light' : 'dark');
-    }
-    const value = { theme, toggleTheme };
   return (
     <ThemeContext.Provider value={theme}>
       <div className={`home-header ${theme}`}>

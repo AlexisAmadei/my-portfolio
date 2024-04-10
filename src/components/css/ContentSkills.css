@@ -21,3 +21,7 @@
     margin: 1rem;
     width: 64px;
 }
+
+.home-content-skill.light h1 {
+    background-color: #eaf1f7;
+}
