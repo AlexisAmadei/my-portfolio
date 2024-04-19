@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './css/ContentExp.css';
 import { BiMinus, BiPlus } from 'react-icons/bi';
 import { LocationOn } from '@mui/icons-material';
-import { ThemeContext } from '@emotion/react';
+import { ThemeContext } from './ThemeContext';
 
 export default function ContentExp() {
   const experiences = [
@@ -37,7 +37,7 @@ export default function ContentExp() {
           Here is a quick summary of my most recent experiences
         </p>
         {experiences.map((exp, index) => (
-          <div key={index} className='experience-item'>
+          <div key={index} className={`experience-item ${theme}`}>
             <div className='experience-item-preview'>
               <h2>
                 {exp.name}
@@ -59,7 +59,7 @@ export default function ContentExp() {
               <div className='experience-item-details'>
                 <p id='location'><LocationOn />{exp.location}</p>
                 <p id='description'>{exp.description}</p>
-                <div className='experience-item-skills'>
+                <div className={`experience-item-skills ${theme}`}>
                   {exp.skills.map((skill, index) => (
                     <p key={index}>{skill}</p>
                   ))}
