@@ -15,7 +15,7 @@ export default function HomeHero() {
               fontSize: "40px"
             }}>Hi, I'm</span>
             <br /><span style={{ fontSize: "58px" }}>Alexis Amadei,</span>
-            <br /><span style={{ color: 'var(--light-text-secondary)', fontSize: '20px' }}>A passionnate <span style={{ color: 'var(--dark-accent)' }}>{'<Frontend Web Developer />'}</span> willing to learn and grow.</span>
+            <br /><span style={{ color: 'var(--light-text-secondary)', fontSize: '20px' }}>A passionnate <span style={{ color: 'var(--dark-accent)', textWrap: 'nowrap' }}>{'<Frontend Web Developer />'}</span> willing to learn and grow.</span>
           </div>
           <div className='home-hero-right'>
             <img src={Me} alt='avatar' className='avatar' loading='lazy' />
