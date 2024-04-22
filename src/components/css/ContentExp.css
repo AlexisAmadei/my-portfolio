@@ -20,8 +20,30 @@
 }
 
 @media (max-width: 1000px) {
+    .home-content-experience p {
+        line-height: 1;
+        font-size: smaller;
+    }
     .experience-item h2{
         font-size: medium;
+        line-height: 1;
+        text-align: left;
+        margin: 0.5rem 0;
+    }
+    .experience-item-preview {
+        align-items: center;
+    }
+    .experience-item-preview p {
+        font-size: small;
+        line-height: 0;
+    }
+    .experience-item-details p {
+        font-size: small;
+        line-height: 1.2;
+    }
+    .experience-item-preview-rightSide p {
+        line-height: 1;
+        text-wrap: nowrap;
     }
 }
 

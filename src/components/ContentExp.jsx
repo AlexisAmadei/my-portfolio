@@ -10,7 +10,7 @@ export default function ContentExp() {
       name: 'Frontend developer',
       company: 'Accor',
       date: '2023 (2 months)',
-      description: 'Lorem ipsum dolor sit amet',
+      description: 'Working on severals internals tools like splunk and GitLaB. Also working on a map project using Leaflet. I also worked on with TypeScript and Python to automate some tasks.',
       location: 'Issy-les-Moulineaux, France',
       skills: ['TypeScript', 'Python', 'GitLab', 'Splunk', 'Leaflet'],
     },
