@@ -9,10 +9,10 @@ export default function Footer() {
       </div>
       <div className='footer-contact'>
         <div className='footer-contact-email'>
-          <a href='mailto:alexisamadei@gmail.com'>alexisamadei@gmail.com</a>
+          <a href='mailto:alexisamadei@gmail.com' style={{textWrap:'nowrap'}}>alexisamadei@gmail.com</a>
         </div>
         <div className='footer-contact-phone'>
-          <p>+33 7 67 27 81 46</p>
+          <p style={{textWrap:'nowrap'}}>+33 7 67 27 81 46</p>
         </div>
         <div className='footer-social'>
           <a><LinkedIn /></a>

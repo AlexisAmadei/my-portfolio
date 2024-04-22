@@ -19,6 +19,12 @@
     border-radius: 16px;
 }
 
+@media (max-width: 1000px) {
+    .experience-item h2{
+        font-size: medium;
+    }
+}
+
 .experience-item.light *{
     color: var(--light-text);
 }

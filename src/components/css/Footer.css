@@ -1,3 +1,14 @@
+@media (max-width: 1000px) {
+    .footer-contact *{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        margin: 0;
+        padding: 2px;
+        color: gray;
+    }
+}
+
 .footer {
     width: 100%;
     display: flex;
@@ -21,12 +32,14 @@
     border-top: 4px solid var(--dark-secondary);
 }
 
-.footer-contact {
-    display: flex;
-    flex-direction: row;
-    gap: 24px;
-    align-items: center;
-    color: gray;
+@media (min-width: 1000px) {
+    .footer-contact {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        align-items: center;
+        color: gray;
+    }
 }
 
 .footer-social {
@@ -40,4 +53,8 @@
     text-decoration: none;
     color: gray;
     cursor: pointer;
+}
+
+.footer a:hover {
+    color: var(--dark-accent);
 }
