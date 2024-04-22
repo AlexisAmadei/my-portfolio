@@ -52,6 +52,11 @@
     padding: 1rem;
     margin: 1rem;
     text-align: left;
+    transition: box-shadow 0.2s;
+}
+
+.project-item:hover {
+    box-shadow: 0 0 30px var(--dark-accent);
 }
 
 .home-content-project.light a {
