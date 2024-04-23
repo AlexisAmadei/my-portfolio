@@ -19,11 +19,11 @@ export default function ContentProject() {
           <h1>Work</h1>
           <div className='project-container'>
             {projects.map((projet, index) => (
-              <div key={index} className='project-item'>
+              <div key={index} className='project-item' onClick={() => window.open(projet.link)}>
                 <img style={{ borderRadius: '16px' }} className='project-preview' src={projet.preview} width={"100%"} alt='project preview' />
                 <h2>{projet.name}</h2>
                 <p>{projet.description}</p>
-                <a href={projet.link} target='_blank' rel='noreferrer'><GitHub /></a>
+                {/* <a href={projet.link} target='_blank' rel='noreferrer'><GitHub /></a> */}
                 <div className='project-tech-container'>
                   {projet.tech.map((tech, index) => (
                     <span key={index} className='project-tech'>{tech}</span>

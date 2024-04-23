@@ -57,6 +57,7 @@
 
 .project-item:hover {
     box-shadow: 0 0 30px var(--dark-accent);
+    cursor: pointer;
 }
 
 .home-content-project.light a {
@@ -73,7 +74,8 @@
     font-size: large;
 }
 
-.project-item h2, .project-item p {
+.project-item h2,
+.project-item p {
     margin: 0.5rem 0;
 }
 
@@ -82,6 +84,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0.5rem;
+    margin-top: 0.5rem;
+    align-items: last baseline;
 }
 
 .project-tech-container span {
@@ -114,6 +118,14 @@
     background-color: #26312b;
     color: #08b768;
     margin-bottom: 8px;
+
+    border: none;
+    transition: all 0.2s;
+}
+
+.view-more button:hover {
+    background-color: #08b768;
+    color: white;
 }
 
 .home-content-project.light button {
