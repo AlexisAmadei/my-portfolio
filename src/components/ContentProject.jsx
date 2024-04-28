@@ -1,6 +1,6 @@
 import React from 'react'
 import { GitHub } from '@mui/icons-material'
-import './css/ContentProject.css'
+import './styles/ContentProject.css'
 import previewPIM from '../assets/preview/previewPIM.png'
 import previewFT2 from '../assets/preview/previewFT2.png'
 import previewTinapp from '../assets/preview/previewTinapp.png'

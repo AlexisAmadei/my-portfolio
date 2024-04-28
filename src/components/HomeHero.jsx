@@ -1,4 +1,4 @@
-import './css/HomeHero.css'
+import './styles/HomeHero.css'
 import Me from '../assets/me.png'
 
 import { ThemeContext } from './ThemeContext'

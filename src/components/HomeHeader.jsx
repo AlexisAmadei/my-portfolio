@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react'
 import { LightMode, DarkMode } from '@mui/icons-material'
-import "./css/HomeHeader.css"
+import "./styles/HomeHeader.css"
 
 import {ThemeContext} from './ThemeContext'
 

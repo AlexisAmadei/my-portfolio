@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './css/ContentExp.css';
+import './styles/ContentExp.css';
 import { BiMinus, BiPlus } from 'react-icons/bi';
 import { LocationOn } from '@mui/icons-material';
 import { ThemeContext } from './ThemeContext';

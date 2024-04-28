@@ -1,4 +1,4 @@
-import './css/ContentSkills.css';
+import './styles/ContentSkills.css';
 import {
   IconJs,
   IconTypescript,

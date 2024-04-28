@@ -1,5 +1,5 @@
 import { GitHub, LinkedIn } from '@mui/icons-material'
-import './css/Footer.css'
+import './styles/Footer.css'
 
 export default function Footer() {
   return (
