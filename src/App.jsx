@@ -8,8 +8,13 @@ import ContentExp from './components/ContentExp'
 import Footer from './components/Footer'
 
 import { ThemeProvider, ThemeContext } from './components/ThemeContext'
+import {onLCP, onFID, onCLS} from 'web-vitals/attribution';
 
 export default function App() {
+  onCLS(console.log);
+  onFID(console.log);
+  onLCP(console.log);
+  
   return (
     <ThemeProvider>
       <ThemeContext.Consumer>
